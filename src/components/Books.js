@@ -17,8 +17,8 @@ class Books extends Component {
   }
 };
 
-const mapStateToProps = state => {
-  return { books: state.books }
-}
+// const mapStateToProps = state => {
+//   return { books: state.books }
+// }
 
-export default connect(mapStateToProps)(Books);
+export default connect(state => ({books: state.books}))(Books);
